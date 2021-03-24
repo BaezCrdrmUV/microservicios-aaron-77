@@ -7,10 +7,10 @@ namespace MSCompras.Models
 {
     public partial class Compra
     {
-        public Compra()
-        {
-            ProductosCompras = new HashSet<ProductosCompra>();
-        }
+        // public Compra()
+        // {
+        //     ProductosCompras = new HashSet<ProductosCompra>();
+        // }
 
         public int Id { get; set; }
         public DateTime Fecha { get; set; }

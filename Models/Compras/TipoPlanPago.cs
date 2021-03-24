@@ -7,10 +7,10 @@ namespace MSCompras.Models
 {
     public partial class TipoPlanPago
     {
-        public TipoPlanPago()
-        {
-            PlanesPagos = new HashSet<PlanesPago>();
-        }
+        // public TipoPlanPago()
+        // {
+        //     PlanesPagos = new HashSet<PlanesPago>();
+        // }
 
         public int Id { get; set; }
         public string Nombre { get; set; }

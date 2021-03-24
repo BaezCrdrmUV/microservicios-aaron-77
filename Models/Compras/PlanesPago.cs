@@ -7,10 +7,10 @@ namespace MSCompras.Models
 {
     public partial class PlanesPago
     {
-        public PlanesPago()
-        {
-            Compras = new HashSet<Compra>();
-        }
+        // public PlanesPago()
+        // {
+        //     Compras = new HashSet<Compra>();
+        // }
 
         public int Id { get; set; }
         public int? Mensualidades { get; set; }
