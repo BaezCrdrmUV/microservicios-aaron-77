@@ -7,12 +7,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MSCompras
+namespace MSClientes
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            string connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+                Console.WriteLine(connectionString);
             CreateHostBuilder(args).Build().Run();
         }
 
