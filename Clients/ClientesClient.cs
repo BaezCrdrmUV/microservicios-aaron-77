@@ -14,13 +14,14 @@ namespace GatewayTienda.Clients
         public ClientesClient()
         {
             urlServicio = Environment.GetEnvironmentVariable("URL_MS_CLIENTES");
+            Console.WriteLine(urlServicio);
             client = new HttpClient();
         }
 
         public async Task<Cliente[]> BuscaClientes(string nombre = "", int idCliente = -1)
         {
             Cliente[] values;
-            string url = urlServicio + "/clientes/buscar?";
+            string url = urlServicio + "/Clientes/buscar?";
             bool pa = false;
             if(!String.IsNullOrEmpty(nombre)) 
             {
